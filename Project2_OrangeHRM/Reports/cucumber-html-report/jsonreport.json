@@ -1,0 +1,578 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-09-09T23:45:01.511Z",
+        "line": 4,
+        "name": "Log in to the OrangeHRM",
+        "description": "",
+        "id": "orangehrm-admin-job-features;log-in-to-the-orangehrm",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 20174786100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Navigates to OrangeHRM",
+            "match": {
+              "location": "com.StepDefinition.Admin.Admin_Job_PayCard_SD.navigates_to_OrangeHRM()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 38997400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Validate the url",
+            "match": {
+              "location": "com.StepDefinition.Admin.Admin_Job_PayCard_SD.validate_the_url()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1624145800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Enter the  userNam and pwd",
+            "match": {
+              "location": "com.StepDefinition.Admin.Admin_Job_PayCard_SD.enter_the_userNam_and_pwd()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3350364600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "click on the loginbutton",
+            "match": {
+              "location": "com.StepDefinition.Admin.Admin_Job_PayCard_SD.click_on_the_loginbutton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 72998000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Get the page title ,take Screenshot",
+            "match": {
+              "location": "com.StepDefinition.Admin.Admin_Job_PayCard_SD.get_the_page_title_take_Screenshot()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5954816600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Click   Admin tab",
+            "match": {
+              "location": "com.StepDefinition.Admin.Admin_Job_PayCard_SD.click_Admin_tab()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3359995700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "click JobTab menu",
+            "match": {
+              "location": "com.StepDefinition.Admin.Admin_Job_PayCard_SD.click_JobTab_menu()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5901695700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Click PayGrades menu",
+            "match": {
+              "location": "com.StepDefinition.Admin.Admin_Job_PayCard_SD.click_PayGrades_menu()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Pay_Grade"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-09-09T23:45:43.886Z",
+        "line": 15,
+        "name": "Add the PayGrades  name and click save",
+        "description": "",
+        "id": "orangehrm-admin-job-features;add-the-paygrades--name-and-click-save",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4230077300,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "click Add button at the buttom",
+            "match": {
+              "location": "com.StepDefinition.Admin.Admin_Job_PayCard_SD.click_Add_button_at_the_buttom()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 510000500,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Enter PayGradesnamw",
+            "match": {
+              "location": "com.StepDefinition.Admin.Admin_Job_PayCard_SD.enter_PayGradesnamw()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1713545700,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "click save",
+            "match": {
+              "location": "com.StepDefinition.Admin.Admin_Job_PayCard_SD.click_save()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3277312200,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "verify the success msg",
+            "match": {
+              "location": "com.StepDefinition.Admin.Admin_Job_PayCard_SD.verify_the_success_msg()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Pay_Grade"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-09-09T23:45:53.805Z",
+        "line": 21,
+        "name": "Add the PayGrades name and click cancel",
+        "description": "",
+        "id": "orangehrm-admin-job-features;add-the-paygrades-name-and-click-cancel",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4873000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "clicks add button",
+            "match": {
+              "location": "com.StepDefinition.Admin.Admin_Job_PayCard_SD.clicks_add_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 439003700,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Enter name in the PayGrades textbox",
+            "match": {
+              "location": "com.StepDefinition.Admin.Admin_Job_PayCard_SD.enter_name_in_the_PayGrades_textbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1193004200,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "click cancel",
+            "match": {
+              "location": "com.StepDefinition.Admin.Admin_Job_PayCard_SD.click_cancel()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 79996300,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "verify the page title",
+            "match": {
+              "location": "com.StepDefinition.Admin.Admin_Job_PayCard_SD.verify_the_page_title()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Pay_Grade"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-09-09T23:46:00.475Z",
+        "line": 27,
+        "name": "Delete the PayGrades name and click ok",
+        "description": "",
+        "id": "orangehrm-admin-job-features;delete-the-paygrades-name-and-click-ok",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 935001000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "click the check box",
+            "match": {
+              "location": "com.StepDefinition.Admin.Admin_Job_PayCard_SD.click_the_check_box()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7263175700,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "click delete",
+            "match": {
+              "location": "com.StepDefinition.Admin.Admin_Job_PayCard_SD.click_delete()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3885803400,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "Click Ok in the popup",
+            "match": {
+              "location": "com.StepDefinition.Admin.Admin_Job_PayCard_SD.click_Ok_in_the_popup()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 280998500,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "verify the successfully deleted msg",
+            "match": {
+              "location": "com.StepDefinition.Admin.Admin_Job_PayCard_SD.verify_the_successfully_deleted_msg()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Pay_Grade"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-09-09T23:46:12.927Z",
+        "line": 33,
+        "name": "Delete the PayGrades name and click ocancel",
+        "description": "",
+        "id": "orangehrm-admin-job-features;delete-the-paygrades-name-and-click-ocancel",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 827001400,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "click the check box next to the name",
+            "match": {
+              "location": "com.StepDefinition.Admin.Admin_Job_PayCard_SD.click_the_check_box_next_to_the_name()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3233002600,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "clicks delete",
+            "match": {
+              "location": "com.StepDefinition.Admin.Admin_Job_PayCard_SD.clicks_delete()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2363988200,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "Click cancel in the popup",
+            "match": {
+              "location": "com.StepDefinition.Admin.Admin_Job_PayCard_SD.click_cancel_in_the_popup()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 36990800,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "validate the page title",
+            "match": {
+              "location": "com.StepDefinition.Admin.Admin_Job_PayCard_SD.validate_the_page_title()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Pay_Grade"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-09-09T23:46:19.434Z",
+        "line": 39,
+        "name": "Edit the PayGrades name and click save",
+        "description": "",
+        "id": "orangehrm-admin-job-features;edit-the-paygrades-name-and-click-save",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4352003300,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "click the name link in the table",
+            "match": {
+              "location": "com.StepDefinition.Admin.Admin_Job_PayCard_SD.click_the_name_link_in_the_table()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6390638200,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "clicks Edit",
+            "match": {
+              "location": "com.StepDefinition.Admin.Admin_Job_PayCard_SD.clicks_Edit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 738076900,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "clear the name in the txt box",
+            "match": {
+              "location": "com.StepDefinition.Admin.Admin_Job_PayCard_SD.clear_the_name_in_the_txt_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4106026400,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "enter the name",
+            "match": {
+              "location": "com.StepDefinition.Admin.Admin_Job_PayCard_SD.enter_the_name()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1680212600,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "Click save button",
+            "match": {
+              "location": "com.StepDefinition.Admin.Admin_Job_PayCard_SD.click_save_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3298545200,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "validate the success msg",
+            "match": {
+              "location": "com.StepDefinition.Admin.Admin_Job_PayCard_SD.validate_the_success_msg()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Pay_Grade"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-09-09T23:46:40.078Z",
+        "line": 48,
+        "name": "Edit the PayGrades name and click cancel",
+        "description": "",
+        "id": "orangehrm-admin-job-features;edit-the-paygrades-name-and-click-cancel",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 33173137000,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "click the name link in the table",
+            "match": {
+              "location": "com.StepDefinition.Admin.Admin_Job_PayCard_SD.click_the_name_link_in_the_table()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 30122042800,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "Click the name link",
+            "match": {
+              "location": "com.StepDefinition.Admin.Admin_Job_PayCard_SD.click_the_name_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6352991300,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "clicks Edit button",
+            "match": {
+              "location": "com.StepDefinition.Admin.Admin_Job_PayCard_SD.clicks_Edit_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 273008500,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "clear the name from the txt box",
+            "match": {
+              "location": "com.StepDefinition.Admin.Admin_Job_PayCard_SD.clear_the_name_from_the_txt_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3552991500,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "enter the name un the txt box",
+            "match": {
+              "location": "com.StepDefinition.Admin.Admin_Job_PayCard_SD.enter_the_name_un_the_txt_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3454728900,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "Click cancel button again",
+            "match": {
+              "location": "com.StepDefinition.Admin.Admin_Job_PayCard_SD.click_cancel_button_again()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 345065500,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "validate the page title\t is displated",
+            "match": {
+              "location": "com.StepDefinition.Admin.Admin_Job_PayCard_SD.validate_the_page_title_is_displated()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Pay_Grade"
+          }
+        ]
+      }
+    ],
+    "name": "OrangeHRM Admin_Job Features",
+    "description": "",
+    "id": "orangehrm-admin-job-features",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/Admin_job_PayGrades.feature",
+    "tags": [
+      {
+        "name": "@Pay_Grade",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

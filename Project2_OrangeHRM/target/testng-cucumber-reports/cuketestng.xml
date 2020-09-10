@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testng-results failed="0" passed="7" skipped="0" total="7">
+    <suite duration-ms="179421" name="io.cucumber.core.plugin.TestNGFormatter">
+        <test duration-ms="179421" name="io.cucumber.core.plugin.TestNGFormatter">
+            <class name="OrangeHRM Admin_Job Features">
+                <test-method duration-ms="40477" finished-at="2020-09-09T23:45:42.730411100Z" name="Log in to the OrangeHRM" started-at="2020-09-09T23:45:01.511593700Z" status="PASS"/>
+                <test-method duration-ms="9730" finished-at="2020-09-09T23:45:53.624492300Z" name="Add the PayGrades  name and click save" started-at="2020-09-09T23:45:43.886559300Z" status="PASS"/>
+                <test-method duration-ms="6585" finished-at="2020-09-09T23:46:00.401497Z" name="Add the PayGrades name and click cancel" started-at="2020-09-09T23:45:53.805493Z" status="PASS"/>
+                <test-method duration-ms="12364" finished-at="2020-09-09T23:46:12.846469300Z" name="Delete the PayGrades name and click ok" started-at="2020-09-09T23:46:00.475494Z" status="PASS"/>
+                <test-method duration-ms="6460" finished-at="2020-09-09T23:46:19.392461300Z" name="Delete the PayGrades name and click ocancel" started-at="2020-09-09T23:46:12.927468300Z" status="PASS"/>
+                <test-method duration-ms="20565" finished-at="2020-09-09T23:46:40.004973300Z" name="Edit the PayGrades name and click save" started-at="2020-09-09T23:46:19.434470300Z" status="PASS"/>
+                <test-method duration-ms="77273" finished-at="2020-09-09T23:47:57.364949700Z" name="Edit the PayGrades name and click cancel" started-at="2020-09-09T23:46:40.078967600Z" status="PASS"/>
+            </class>
+        </test>
+    </suite>
+</testng-results>
