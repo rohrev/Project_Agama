@@ -28,15 +28,13 @@ public class Admin_Job_PayCard_SD extends Library {
 	public void validate_the_url() {
 		String actual_URL = driver.getCurrentUrl();
 		Assert.assertEquals(actual_URL, "https://opensource-demo.orangehrmlive.com/", "Launched the incorrect url");
-
 	}
 
 	@When("Enter the  userNam and pwd")
 	public void enter_the_userNam_and_pwd() {
 		lpage = new LogInPages(driver);
-		// lpage.login(properties.getProperty("userName"),properties.getProperty("password"));
-		lpage.login("Admin", "admin123");
-
+		lpage.login(properties.getProperty("userName"),properties.getProperty("password"));
+		//lpage.login("Admin", "admin123");
 	}
 
 	@When("click on the loginbutton")
@@ -52,7 +50,8 @@ public class Admin_Job_PayCard_SD extends Library {
 		String actual_title = driver.getTitle();
 		Assert.assertEquals(actual_title, "OrangeHRM", " NOt Successfully loggged");
 	}
-
+//-------------------------LogIn Functionality Ends-------------------------------------------------
+////-------------------------Add and Save---------------------------	
 	@Then("Click   Admin tab")
 	public void click_Admin_tab() {
 		aj_payPage = new Admin_Job_PayGrades_Pages(driver);
@@ -72,9 +71,8 @@ public class Admin_Job_PayCard_SD extends Library {
 	@Given("Click PayGrades menu")
 	public void click_PayGrades_menu() {
 		aj_payPage = new Admin_Job_PayGrades_Pages(driver);
-		aj_payPage.jobtitleclick("//li[1]//ul[1]//li[2]//ul[1]/li", "Pay Grades");
+		aj_payPage.jobtitleclick(properties.getProperty("subTabJobList"), properties.getProperty("payGradeClick"));
 		logger.info("job title from job subtab clicked  Seccessful");
-
 	}
 	@Then("click Add button at the buttom")
 	public void click_Add_button_at_the_buttom() {
@@ -85,7 +83,7 @@ public class Admin_Job_PayCard_SD extends Library {
 	@Then("Enter PayGradesnamw")
 	public void enter_PayGradesnamw() {
 		aj_payPage = new Admin_Job_PayGrades_Pages(driver);
-		aj_payPage.enter_PayGradesnamw("Something10");
+		aj_payPage.enter_PayGradesnamw(properties.getProperty("entertxt"));
 		logger.info("Entered Pay Grade Successfully");
 
 	}
@@ -108,7 +106,7 @@ public class Admin_Job_PayCard_SD extends Library {
 		logger.info("Success mesage was captured successfully");
 
 	}
-
+//-------------------------Add and cancel---------------------------
 	@Then("clicks add button")
 	public void clicks_add_button() {
 		aj_payPage = new Admin_Job_PayGrades_Pages(driver);
@@ -120,7 +118,7 @@ public class Admin_Job_PayCard_SD extends Library {
 	@Then("Enter name in the PayGrades textbox")
 	public void enter_name_in_the_PayGrades_textbox() {
 		aj_payPage = new Admin_Job_PayGrades_Pages(driver);
-		aj_payPage.enter_PayGradesnamw("Something10");
+		aj_payPage.enter_PayGradesnamw(properties.getProperty("entertxt"));
 		logger.info("Entered Pay Grade Successfully");
 	}
 
@@ -140,13 +138,14 @@ public class Admin_Job_PayCard_SD extends Library {
 		logger.info("VAldating the page title");
 
 	}
-
+//-------------------------Click check box,delete  and Ok---------------------------
+	
 	@Then("click the check box")
 	public void click_the_check_box() {
 		aj_payPage = new Admin_Job_PayGrades_Pages(driver);
-		String checkBoxN = "//table/tbody/tr/td/input";
-		String tableNameList = "//table/tbody/tr/td[@class='left']/preceding-sibling::td/a";
-		String PayName = "Something10";
+		String checkBoxN = properties.getProperty("CheckboxList");
+		String tableNameList = properties.getProperty("tableNameList");
+		String PayName =  properties.getProperty("entertxt");
 		aj_payPage.clickcheck_box(checkBoxN, tableNameList, PayName);
 
 	}
@@ -163,7 +162,7 @@ public class Admin_Job_PayCard_SD extends Library {
 	@Then("Click Ok in the popup")
 	public void click_Ok_in_the_popup() {
 		aj_payPage = new Admin_Job_PayGrades_Pages(driver);
-		aj_payPage.click_Okpopup("//div/div/input[@class='btn']");
+		aj_payPage.click_Okpopup(properties.getProperty("popUpOk"));
 
 	}
 
@@ -176,13 +175,14 @@ public class Admin_Job_PayCard_SD extends Library {
 		logger.info("Success  delete mesage was captured successfully");
 
 	}
-
+//-------------------------Click check box, delete  and cancel---------------------------
+	
 	@Then("click the check box next to the name")
 	public void click_the_check_box_next_to_the_name() {
 		aj_payPage = new Admin_Job_PayGrades_Pages(driver);
-		String checkBoxN = "//table/tbody/tr/td/input";
-		String tableNameList = "//table/tbody/tr/td[@class='left']/preceding-sibling::td/a";
-		String PayName = "Something";
+		String checkBoxN =  properties.getProperty("CheckboxList");
+		String tableNameList = properties.getProperty("tableNameList");
+		String PayName = properties.getProperty("entertxt1");
 		aj_payPage.clickcheck_box(checkBoxN, tableNameList, PayName);
 
 	}
@@ -198,8 +198,7 @@ public class Admin_Job_PayCard_SD extends Library {
 	public void click_cancel_in_the_popup() {
 		aj_payPage = new Admin_Job_PayGrades_Pages(driver);
 		//seleniumUtility.sleep();
-		aj_payPage.click_cancelpopup("//div//div/input[contains(@class,'btn reset')]");
-
+		aj_payPage.click_cancelpopup(properties.getProperty("popupCancel"));
 	}
 
 	@Then("validate the page title")
@@ -209,22 +208,17 @@ public class Admin_Job_PayCard_SD extends Library {
 		String Expected = "OrangeHRM";
 		Assert.assertEquals(actual_title, Expected, " Page Title not matching");
 		logger.info("Verified the page title successfully");
-
-	}
-
+		}
+//-------------------------Edit the name and ok---------------------------
 	@Then("click the name link in the table")
 	public void click_the_name_link_in_the_table() {
 		aj_payPage = new Admin_Job_PayGrades_Pages(driver);
-		aj_payPage.click_name_link("//table/tbody/tr/td[@class='left']/preceding-sibling::td/a", "Something");
+		aj_payPage.click_name_link(properties.getProperty("tableNameList"),properties.getProperty("entertxt1"));
 		seleniumUtility.sleep();
 		logger.info("The name was clicked successfully");
 	}
 		
-//	@Then("Click the button add")		
-//	public void click_the_button_add() {
-//			aj_payPage = new Admin_Job_PayGrades_Pages(driver);
-//			aj_payPage.addclick();
-//		}	
+	
 
 	@Then("clicks Edit")
 	public void clicks_Edit() {
@@ -243,7 +237,7 @@ public class Admin_Job_PayCard_SD extends Library {
 	@Then("enter the name")
 	public void enter_the_name() {
 		aj_payPage = new Admin_Job_PayGrades_Pages(driver);
-		aj_payPage.enter_the_name("GradeA");
+		aj_payPage.enter_the_name(properties.getProperty("entertxt2"));
 		seleniumUtility.sleep();
 
 	}
@@ -267,20 +261,14 @@ public class Admin_Job_PayCard_SD extends Library {
 		logger.info("Success mesage was captured successfully");
 
 	}
-
+//-------------------------Edit the name and cancel---------------------------
 	@Then("Click the name link")
 	public void click_the_name_link() {
 		aj_payPage = new Admin_Job_PayGrades_Pages(driver);
-		aj_payPage.click_name_link("//table/tbody/tr/td[@class='left']/preceding-sibling::td/a", "GradeA");
+		aj_payPage.click_name_link(properties.getProperty("tableNameList"),properties.getProperty("entertxt2"));
 		logger.info("The name was clicked successfully");
 	}
-//
-//	@Then("Add button click")
-//	public void add_button_click() {
-//		aj_payPage = new Admin_Job_PayGrades_Pages(driver);
-//		aj_payPage.addclick();
-//
-//	}
+
 
 	@Then("clicks Edit button")
 	public void clicks_Edit_button() {
@@ -300,7 +288,7 @@ public class Admin_Job_PayCard_SD extends Library {
 	@Then("enter the name un the txt box")
 	public void enter_the_name_un_the_txt_box() {
 		aj_payPage = new Admin_Job_PayGrades_Pages(driver);
-		aj_payPage.enter_the_name("GradeB");
+		aj_payPage.enter_the_name(properties.getProperty("entertxt3"));
 		seleniumUtility.sleep();
 
 	}
